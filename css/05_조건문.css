@@ -1,0 +1,10 @@
+pre>code{
+    border: 3px solid black;
+    background-color: black;
+    color: lightblue;
+    font-size: 13px;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'd2coding';
+}
