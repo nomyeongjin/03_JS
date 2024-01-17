@@ -14,25 +14,32 @@ function createTable(){
 
 
    thRow.innerHTML = ""; // 초기화
-   tbody.innerHTML = ""; // 초기화
+   
+
+//----------------------------------------------------------
 
     // start부터 end까지 1씩 증가
     for(let dan=start; dan<=end; dan++){
         thRow.innerHTML += `<th>${dan}단</th>`;
     }
+   
     
-   // 곱해지는 수(또는 n번째 줄)
+//----------------------------------------------------------
+
+    tbody.innerHTML = ""; // 초기화
+   
+    // 곱해지는 수(또는 n번째 줄)
     for(let num=1; num<=9; num++){
 
         let str = "<tr>";
            
         for(let dan=start; dan<=end; dan++){
-                str += `<td>${dan} X ${num} = ${dan * num}</td>  `
-               ;
+                str += `<td>${dan} X ${num} = ${dan * num}</td>  `;
+               
             }
             
             str +="</tr>"
-            tbody.innerHTML = `${str}`
+            tbody.innerHTML += str
         
     }
     
