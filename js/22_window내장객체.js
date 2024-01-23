@@ -63,3 +63,48 @@ stop3.addEventListener("click", () => {
   
     start3.disabled = false;
   });
+
+  /* 팝업창 열기 */
+  const openPopup1 = document.querySelector("#openPopup1");
+
+  openPopup1.addEventListener("click",()=>{
+    window.open("23_스톱워치.html")
+  })
+  
+  const openPopup2 = document.querySelector("#openPopup2");
+
+  openPopup2.addEventListener("click",()=>{
+    window.open("23_스톱워치.html", "_blank","popup")
+  })
+
+  /* 팝업창 + 옵션 */
+  const openPopup3 = document.querySelector("#openPopup3");
+
+  openPopup3.addEventListener("click",()=>{
+    let options = [];
+    options.push("width=500");
+    options.push("height=500");
+    
+    /* 팝업창 띄우는 위치 지정 */
+    // 단, 메인 모니터에서만 적용됨
+    options.push("left=500");
+    options.push("top=100");
+
+
+    window.open("23_스톱워치.html", "_blank",options.toString())
+  })
+
+  /* 팝업창(자식)이 부모창의 값을 읽고/쓰기 */
+  const openPopup4 = document.querySelector("#openPopup4");
+
+  openPopup4.addEventListener("click",()=>{
+    const options = [];
+
+    options.push("width=600")
+    options.push("height=300")
+    options.push("leht=500")
+    options.push("top=100")
+
+
+    window.open("22_팝업창.html","_blank",options.toString())
+  })
