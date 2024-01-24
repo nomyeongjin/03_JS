@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 200px;
+    padding: 15px;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    justify-content: center;    
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.number:hover{
+    background-color: lightblue;
+}
+button{
+    margin: 5px 0;
+}
